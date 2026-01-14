@@ -1,10 +1,79 @@
-<div id="games"></div>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OPENGAME — Каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="gh-header">
+    <div class="container header-inner">
+      <h1 class="site-title">OPENGAME</h1>
+      <div class="header-actions">
+        <button id="refreshBtn" class="btn small">Refresh</button>
+        <button id="openAddBtn" class="btn primary small">Add game</button>
+      </div>
+    </div>
+  </header>
 
-<h3>Добавить игру</h3>
-<input id="title" placeholder="Название">
-<input id="link" placeholder="Ссылка">
-<input id="desc" placeholder="Описание">
-<input id="images" placeholder="Ссылки на картинки (через запятую)">
-<button onclick="addGame()">Добавить</button>
+  <main class="container main">
+    <div id="notif" class="notif" aria-live="polite" style="display:none"></div>
+
+    <section id="list" class="list">
+      <div class="loading">Loading…</div>
+    </section>
+  </main>
+
+  <!-- Add modal -->
+  <div id="addModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Добавить игру</h2>
+        <button id="closeAdd" class="btn icon">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <label>Название <input id="inTitle" class="input" placeholder="Название (обязательно)"></label>
+        <label>Ссылка на файл <input id="inLink" class="input" placeholder="Drive или direct URL (обязательно)"></label>
+        <label>Описание <textarea id="inDesc" class="input" rows="4" placeholder="Описание (опционально)"></textarea></label>
+        <label>Ссылки на картинки <input id="inImages" class="input" placeholder="через запятую: https://... , https://..."></label>
+
+        <div class="modal-actions">
+          <button id="cancelAdd" class="btn">Отмена</button>
+          <button id="addSend" class="btn primary">Добавить</button>
+        </div>
+        <div id="addResult" class="small muted" style="margin-top:8px"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Viewer modal -->
+  <div id="viewer" class="modal" aria-hidden="true">
+    <div class="modal-card viewer-card">
+      <div class="modal-head">
+        <h2 id="vTitle">Title</h2>
+        <button id="vClose" class="btn icon">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p id="vDesc" class="muted"></p>
+        <div id="vCarousel" class="carousel">
+          <div class="carousel-placeholder">Нет фото</div>
+        </div>
+
+        <div class="modal-actions">
+          <a id="vDownload" class="btn primary" target="_blank">Скачать</a>
+          <button id="vDeleteToggle" class="btn danger">Удалить</button>
+          <div id="vTokenBox" class="token-box" style="display:none">
+            <input id="vToken" class="input small" placeholder="Токен для удаления">
+            <button id="vDeleteConfirm" class="btn danger small">Подтвердить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <script src="script.js"></script>
+</body>
+</html>
