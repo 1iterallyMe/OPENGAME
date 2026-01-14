@@ -162,3 +162,6 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape'){ modal.style.
 
 /* init */
 loadList();
+
+
+https://script.google.com/macros/s/AKfycbwT90H5kBKctZS99xTe3c82JbHzkJnJ558ulYbOv54SLeF4gbreL6f5-pnyVuj0pZJ5sg/exec
