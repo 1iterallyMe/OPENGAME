@@ -1,65 +1,10 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Games Catalog</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="h-left"><h1>Games</h1></div>
-      <div class="h-right">
-        <button id="refreshBtn" class="btn">Refresh</button>
-        <button id="openAddBtn" class="btn primary">Add game</button>
-      </div>
-    </header>
+<div id="games"></div>
 
-    <main id="list" class="list"><div class="loading">Loading…</div></main>
-
-    <footer class="footer-note">Hosted on GitHub Pages • Files stored on Google Drive</footer>
-  </div>
-
-  <!-- viewer modal -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modalBox">
-      <div class="modalHeader">
-        <div id="mTitle" class="modalTitle"></div>
-        <button id="closeModal" class="btn">Close</button>
-      </div>
-      <div id="carousel" class="carousel"><div class="small">No images</div></div>
-      <div class="modalFooter">
-        <a id="mDownload" class="btn download" target="_blank">Download</a>
-        <button id="openDelete" class="btn">Delete</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- add modal -->
-  <div id="addModal" class="modal" aria-hidden="true">
-    <div class="modalBox">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-        <div style="font-weight:600">Add game</div>
-        <button id="closeAdd" class="btn">Close</button>
-      </div>
-
-      <div>
-        <div class="form-row"><input id="inTitle" class="input" placeholder="Title"></div>
-        <div class="form-row"><input id="inLink" class="input" placeholder="Main link (Drive link or direct URL)"></div>
-        <div class="form-row"><textarea id="inDesc" class="input" rows="3" placeholder="Description (optional)"></textarea></div>
-        <div class="form-row"><input id="inImages" class="input" placeholder="Image links (comma separated) — Drive or https links"></div>
-
-        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
-          <button id="addCancel" class="btn">Cancel</button>
-          <button id="addSend" class="btn primary">Add</button>
-        </div>
-
-        <div id="addMsg" style="margin-top:10px"></div>
-      </div>
-    </div>
-  </div>
+<h3>Добавить игру</h3>
+<input id="title" placeholder="Название">
+<input id="link" placeholder="Ссылка">
+<input id="desc" placeholder="Описание">
+<input id="images" placeholder="Ссылки на картинки (через запятую)">
+<button onclick="addGame()">Добавить</button>
 
 <script src="script.js"></script>
-</body>
-</html>
