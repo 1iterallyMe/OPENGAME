@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.menucenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 200px;
+    gap: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.home{
+    color: black;
+}
+
+.create{
+    color: rgb(100, 100, 100);
+}
+
+.list{
+    color: rgb(100, 100, 100);
+}
+.opengame{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    margin: 40px;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 50px;
+}
