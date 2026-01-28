@@ -6,33 +6,33 @@ body{
 }
 
 .center{
-    /* display: inline-block; */
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.menucenter{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 200px;
-    margin: 30px;
+    gap: 80px;
 }
 
 .info{
     display: inline-block;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
+
+.menucenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
 .menu{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
+    width: 200px;
     gap: 20px;
 }
 
@@ -69,11 +69,15 @@ body{
 
 .photo{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
 }
 
 .text{
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -84,8 +88,124 @@ body{
 }
 
 .buttoncreate{
-    height: 700px;
-    width: 500px;
-    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 450px;
+    background-color: rgb(225, 225, 225);
     border-radius: 30px;
+}
+
+.textcreategame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    margin: 40px;
+}
+
+.gamename{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 200px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    margin-left: 50px;  
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.gamelink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 200px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    margin-left: 50px;  
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 200px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    margin-left: 50px;  
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.linksimages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 200px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    margin-left: 50px;  
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.addgame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 150px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cencel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 150px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 20px;
 }
