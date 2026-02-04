@@ -1,4 +1,4 @@
-#!/Users/amirusupov/Desktop/OPENGAME/Backend/venv/bin/python3
+#!/Users/amirusupov/Desktop/OPENGAME/Backend/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
